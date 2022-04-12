@@ -1,0 +1,6 @@
+export const UserActions={
+    LOGIN:'USER_LOGIN',
+    LOGOUT:'USER_LOGOUT',
+    CHECKOUT:'USER_CHECKOUT',
+    REGISTER:'USER_REGISTER'
+}

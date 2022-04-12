@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Playfair+Display&display=swap');
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background: #fcfcfc;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+
+}
+
+/* ProductListITem */
+
+
+
+.grid-image {
+  height: 220px;
+  width: 150px;
+  margin-left: 40px;
+  
+ 
+  
+  
+  
+}
+.product-list-title {
+  font-size: 12px;
+  height: 48px;
+  text-align: center;
+  color: #711A75;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.list-item{
+  height: 100px;
+}
+
+.btn-list{
+  background-color: #F10086;
+  color:white;
+  text-align: center;
+  height: 40px;
+  width: 250px;
+  border: #f0c5d3;
+
+}
+
+.container-list{
+  display: grid;
+  place-content: center;
+  border: 1px solid orange;
+  width: 250px;
+ margin-bottom: 20px;
+}
+
+/* footer */
+
+
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #f0c5d3;
+}
+
+.bg {
+  background-color: #f0c5d3;
+
+}
+
+.footer {
+  
+
+  width: 100%;
+  background-color: #F582A7;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0%;
+}
+
+.footer a,
+.footer a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.App-logo {
+  height: 50px;
+  width: 50px;
+  font-family: 'Anton', sans-serif;
+}
+
+.footer-info {
+  color: white;
+
+
+}
+
+.front-logo-name {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.logo-name {
+  color: black;
+  font-style: bold;
+  font-family: 'Anton', sans-serif;
+}
+
+.copyright {
+  color: black;
+  line-height: 2.5rem;
+}
+
+/* review */
+.testimonials {
+
+  background-color: #F10086;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+.testimonial-text {
+  font-size: 25px;
+  line-height: 1;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* offers */
+
+.offers {
+  display: block;
+  padding-bottom: 40px;
+margin:auto;
+}
+
+.offer-item{
+  width: 100px;
+ 
+}
+
+.screen {
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 40px;
+
+}
+
+
+
+/* login */
+.login-container {
+  background-image: linear-gradient(pink, white);
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  margin-left: 35%;
+  padding: 10px;
+}
+
+/* order confirm */
+.hideMeAfter3Seconds {
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  background-image: radial-gradient(pink, white);
+
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+/* productdetail page */
+
+.product-manage-cover{
+  /* box-shadow:-5px -5px 5px #fc84c6; */
+  width:100%;
+   height:100%;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 10px;
+   animation-name: ani-img;
+   animation-duration: 10s;
+  
+}
+@keyframes ani-img {
+  0%   {border:5px solid pink; left:0px; top:0px;}
+  25%  {border:10px solid orange; left:200px; top:0px;}
+  50%  {border:5px solid pink; left:200px; top:200px;}
+  75%  {border:10px solid orange; left:0px; top:200px;}
+  100% {border:1px solid pink; left:0px; top:0px;}
+  
+}
+.product-manage-cover:hover {
+  box-shadow: 0 0 2px 1px #fc84c6;
+}
+
+.product-detail-head{
+  background-image: linear-gradient(#DFDFDE,white);
+  font-family: 'Oswald', sans-serif;
+  font-size: larger;
+  overflow: hidden;
+  
+  text-shadow: 1px 1px rgb(219, 217, 217);
+
+  
+
+}
+
+.product-cate{
+background-color: rgb(245, 181, 63);
+width: 250px;
+
+}
+
+.product-desc{
+  font-family: 'Oswald',sans-serif;
+}
+
+.description{font-family: 'Playfair Display', serif;}
+
+.prod-info{
+  font-family: 'Roboto Slab', serif;
+}
+/* payment */
+.float{
+  float: right;
+}
+
+.container-order-detail{
+  height: 10%;
+
+  width: 100%;
+}
+
+/* orderconfirm screen */
+
+.jumbotron{
+  background-image: linear-gradient(#F190B7,#A63EC5);
+}
