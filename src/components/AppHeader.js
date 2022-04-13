@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 
  import Membership from './Membership';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faCartShopping ,faHeart,faHome} from "@fortawesome/free-solid-svg-icons";
+import {  faCartShopping ,faHeart,faHome,faFilter,faSearch,faGem,faChild,faChildDress,faLaptop} from "@fortawesome/free-solid-svg-icons";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { connect } from 'react-redux';
+import ProductListItem from './ProductListItem';
 
 
 
@@ -16,7 +18,7 @@ const AppHeader = ({cartItem}) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand logo-name" href="#" >
        
-          <img src="/images/logo.png" className="App-logo" alt="logo" />
+          <img src="/images/logo.png" className="App-logo animate__animated animate__bounce" alt="logo" />
           <span className="front-logo-name">info</span>Mart
         </a>
         <button
@@ -38,11 +40,18 @@ const AppHeader = ({cartItem}) => {
                 <FontAwesomeIcon icon={faHome}/><span className="sr-only">(current)</span>
               </Link>
             </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/search">
+              <FontAwesomeIcon icon={faSearch}/><span className="sr-only">(current)</span>
+              </Link>
+    
+             
+            </li>
           </ul>
           <ul className="navbar-nav">
             <li className="nav-item">
             
-              <Link className="nav-link" to="/cart/info">
+              <Link className="nav-link " to="/cart/info">
                
                 <FontAwesomeIcon icon={faCartShopping} />
                
@@ -63,6 +72,21 @@ const AppHeader = ({cartItem}) => {
                
               </Link>
             </li>
+            <li className="nav-item nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <FontAwesomeIcon  icon={faFilter}/> 
+        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+         <Link to="/category/men" >  <button  data-toggle="collapse" data-target="#navbarSupportedContent" className="dropdown-item" ><FontAwesomeIcon icon={faChild}/>Men's Wear</button></Link>
+         <Link to="category/women">   <button  data-toggle="collapse" data-target="#navbarSupportedContent" className="dropdown-item" ><FontAwesomeIcon icon={faChildDress}/>Women's Wear</button></Link>
+            <Link to="/category/jwell"><button  data-toggle="collapse" data-target="#navbarSupportedContent" className="dropdown-item" ><FontAwesomeIcon icon={faGem}/>Jwellery</button></Link>
+          <Link to="/category/gadget">  <button  data-toggle="collapse" data-target="#navbarSupportedContent" className="dropdown-item" ><FontAwesomeIcon icon={faLaptop}/>Gadgets</button></Link>
+            
+        </div>
+
+       </li>
+       
+           
+         
             <li className="nav-item">
               <Membership/>
             </li>
@@ -87,6 +111,8 @@ const AppHeader = ({cartItem}) => {
          
         </div>
       </nav>
+
+     
    
     </div>
   );

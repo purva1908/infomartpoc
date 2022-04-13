@@ -18,6 +18,8 @@ class ProductListService{
         console.log('getproductbyid working in services',response.data);
         return response.data;
     }
+
+
 }
 
 export default new ProductListService();

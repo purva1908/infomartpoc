@@ -9,21 +9,10 @@ import { useNavigate } from 'react-router-dom';
 import Loader from './Loader';
 
 
-
-
-
-
-
-
-
-
 const LoggedInUserMenu = ({ user }) => {
-
-
     var [error, setError] = React.useState(null);
     var [loading, setLoading] = React.useState(false);
     var navigate = useNavigate();
-  
     const dispatch = useDispatch();
     const [inputs, setInputs] = useState({});
   

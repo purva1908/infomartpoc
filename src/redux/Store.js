@@ -15,7 +15,9 @@ const reducers=combineReducers({
     selectProduct:SelectedProductReducer,
     status:statusReducer,
     user:userReducer,
-    cartItem: cartItems
+    cartItem: cartItems,
+  
+
 });
 
 

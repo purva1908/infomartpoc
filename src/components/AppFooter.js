@@ -10,7 +10,7 @@ export default function AppFooter() {
         <Review/> */}
     <footer className='footer'>
        
-           <img src="/images/logo.png" className="App-logo" alt="logo"  />
+           <img src="/images/logo.png" className="App-logo animate__animated animate__bounce" alt="logo"  />
          <h1 className='front-logo-name'>info<span className='logo-name'>Mart</span></h1>
         
        <p className='footer-info'>infoMart is one of the unique online shopping sites in India where fashion is accessible to all.

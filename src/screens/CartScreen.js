@@ -18,9 +18,9 @@ function CartItemsScreen({ cartItem }) {
                     <div className="container">
                         <div className="row w-100">
                             <div className="col-lg-12 col-md-12 col-12">
-                                <h3 className="display-5 mb-2 text-center">Shopping Cart</h3>
+                                <h3 className="cart-head display-5 mb-2 text-center">Shopping Cart</h3>
                                 <p className="mb-5 text-center">
-                                    <i className="text-info font-weight-bold">{cartItem.addedItems.length}</i> items in your cart</p>
+                                    <span className="item-count">{cartItem.addedItems.length}</span> items in your cart</p>
                                 <table id="shoppingCart" className="table table-condensed table-responsive">
                                     <thead>
                                         <tr>
@@ -58,7 +58,7 @@ function CartItemsScreen({ cartItem }) {
                                                 <i className="fas fa-sync" />
                                             </button> */}
                                                         <button className="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                            <FontAwesomeIcon icon={faTrash} onClick={() => dispatch(removeFromCart(item.id))}/>
+                                                            <FontAwesomeIcon className="animate__animated animate__bounce" icon={faTrash} onClick={() => dispatch(removeFromCart(item.id))}/>
                                                         </button>
                                                     </div>
                                                 </td>

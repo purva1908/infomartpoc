@@ -71,7 +71,7 @@ class UserService{
         return user;
     }
 
-    async checkout(email, name,pincode){
+    async checkout(email, name){
        
         if(!email)
             throw new Error("Missing Email");
@@ -79,7 +79,7 @@ class UserService{
         if(!name)
             throw new Error("Missing Name");
        
-    
+  
         let user= this.users.find(user =>user.email === email && user.name === name);
     
         if(user){

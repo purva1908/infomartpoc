@@ -197,6 +197,8 @@ margin:auto;
 }
 
 /* productdetail page */
+.prod-info li{
+  font-family:'Oswald', sans-serif;}
 
 .product-manage-cover{
   /* box-shadow:-5px -5px 5px #fc84c6; */
@@ -263,4 +265,28 @@ width: 250px;
 
 .jumbotron{
   background-image: linear-gradient(#F190B7,#A63EC5);
+  animation-duration: 10s;
 }
+
+.animate_animated animate__rotateOutUpRight{
+  animation-duration: 5s;
+}
+
+.cart-head {
+  font-family: 'Oswald' ,sans-serif;
+  font-size: larger;
+}
+
+.item-count{
+  color: rgb(245, 59, 90);
+}
+
+
+.container-jwel, .container-men, .container-women , .container-gad{
+  border: 1px solid orange;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 30%;
+  
+}
+

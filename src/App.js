@@ -13,8 +13,13 @@ import CartScreen from './screens/CartScreen';
 import Checkoutt from './components/Checkoutt';
 import Payment from './screens/Payment';
 import OrderConfirmScreen from './screens/OrderConfirmScreen';
+import MenCategoryScreen from './screens/MenCategoryScreen';
+import WomenCategoryScreen from './screens/WomenCategoryScreen';
+import JwellCategoryScreen from './screens/JwellCategoryScreen';
+import GadgetCategoryScreen from './screens/GadgetCategoryScreen';
 import Offers from './components/Offers';
 import Review from './components/Review';
+import Search from './components/Search';
 function App(){
 
 return(
@@ -32,6 +37,12 @@ return(
   <Route path="/payment" element={<Payment/>}></Route>
   <Route path="/confirm" element={<OrderConfirmScreen/>}></Route>
   
+  <Route path="/search" element={<Search/>}></Route>
+  <Route path="/category/men" element={<MenCategoryScreen/>}></Route>
+  <Route path="/category/women" element={<WomenCategoryScreen/>}></Route>
+  <Route path="/category/jwell" element={<JwellCategoryScreen/>}></Route>
+  <Route path="/category/gadget" element={<GadgetCategoryScreen/>}></Route>
+
                   {/* <Route path="/" element={<Navigate to="/product/list" />} /> */}
 
                   <Route path="*" element={<NotFoundScreen />} />

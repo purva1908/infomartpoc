@@ -1,6 +1,7 @@
 export const ProductActions={
     PRODUCT_LIST:'PRODUCT_LIST' ,
-    PRODUCT_SELECT:'PRODUCT_SELECT'
+    PRODUCT_SELECT:'PRODUCT_SELECT',
+ 
 }
 
 export const StatusActions={
